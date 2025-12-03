@@ -3,38 +3,27 @@ Sistema Inteligente de Análisis del Punto de Equilibrio y Riesgo Operativo
 Aplicación desarrollada con Next.js, TypeScript y TailwindCSS.
 
 Descripción
-FinanShield OPEX es una plataforma web diseñada para analizar el punto de equilibrio y evaluar el riesgo operativo de una empresa mediante el modelo CVU (Costos–Volumen–Utilidad). El sistema calcula automáticamente el punto de equilibrio, el margen de contribución, el grado de apalancamiento operativo (GAO) y un índice de riesgo operativo. Incluye un simulador interactivo que permite modificar variables y observar cambios en tiempo real.
+FinanShield OPEX es una aplicación web para el análisis del punto de equilibrio y la evaluación del riesgo operativo mediante el modelo CVU (Costos–Volumen–Utilidad). El sistema calcula punto de equilibrio, margen de contribución, grado de apalancamiento operativo e índice de riesgo. Incluye un simulador interactivo y un dashboard con indicadores clave.
 
-Tecnologías utilizadas
-- Next.js 14 (App Router)
-- React
-- TypeScript
-- TailwindCSS
-- API Routes
-- Recharts
-
-Requisitos previos
+Requisitos
 - Node.js 18 o superior
 - npm, yarn o pnpm
 
 Instalación
-1. Clonar el repositorio:
-   git clone https://github.com/USUARIO/finanshield-opex.git
-
-2. Ingresar al proyecto:
-   cd finanshield-opex
-
-3. Instalar dependencias:
-   npm install
-
+```bash
+git clone https://github.com/USUARIO/finanshield-opex.git
+cd finanshield-opex
+npm install
+```
 Ejecución en modo desarrollo
+```bash
    npm run dev
-Abrir en el navegador: http://localhost:3000
-
+```
 Build de producción
+```bash
    npm run build
    npm start
-
+```
 Características principales
 - Cálculo del punto de equilibrio
 - Cálculo del margen de contribución
