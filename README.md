@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+FinanShield OPEX
+Sistema Inteligente de Análisis del Punto de Equilibrio y Riesgo Operativo
+Aplicación desarrollada con Next.js, TypeScript y TailwindCSS.
 
-## Getting Started
+Descripción
+FinanShield OPEX es una plataforma web diseñada para analizar el punto de equilibrio y evaluar el riesgo operativo de una empresa mediante el modelo CVU (Costos–Volumen–Utilidad). El sistema calcula automáticamente el punto de equilibrio, el margen de contribución, el grado de apalancamiento operativo (GAO) y un índice de riesgo operativo. Incluye un simulador interactivo que permite modificar variables y observar cambios en tiempo real.
 
-First, run the development server:
+Tecnologías utilizadas
+- Next.js 14 (App Router)
+- React
+- TypeScript
+- TailwindCSS
+- API Routes
+- Recharts
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Requisitos previos
+- Node.js 18 o superior
+- npm, yarn o pnpm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Instalación
+1. Clonar el repositorio:
+   git clone https://github.com/USUARIO/finanshield-opex.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Ingresar al proyecto:
+   cd finanshield-opex
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Instalar dependencias:
+   npm install
 
-## Learn More
+Ejecución en modo desarrollo
+   npm run dev
+Abrir en el navegador: http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+Build de producción
+   npm run build
+   npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Características principales
+- Cálculo del punto de equilibrio
+- Cálculo del margen de contribución
+- Cálculo del grado de apalancamiento operativo
+- Índice de riesgo operativo
+- Simulador en tiempo real
+- Dashboard con indicadores y gráficos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Licencia
+Este proyecto se distribuye bajo la licencia MIT.
