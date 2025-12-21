@@ -42,7 +42,7 @@ function Card({
       : "text-black";
 
   return (
-    <div className="bg-zinc-100 rounded-lg p-4 text-center">
+    <div className="bg-zinc-100 rounded-lg p-4 text-center ">
       <p className="text-xs text-zinc-500">{title}</p>
       <p className={`text-xl font-bold ${color}`}>{value}</p>
     </div>

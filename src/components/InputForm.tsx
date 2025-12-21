@@ -43,7 +43,7 @@ export default function InputForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="grid grid-cols-1 md:grid-cols-2 gap-6"
+      className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black"
     >
       <Input label="Costos fijos totales" value={fixedCost} onChange={setFixedCost} />
       <Input label="Costo variable unitario" value={variableCost} onChange={setVariableCost} />
@@ -61,7 +61,7 @@ export default function InputForm({
 
 function Input({ label, value, onChange }: any) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-black">
       <label className="text-sm font-medium text-zinc-700 mb-1">{label}</label>
       <input
         type="number"

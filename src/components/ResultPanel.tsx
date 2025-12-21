@@ -19,7 +19,7 @@ export default function ResultPanel({ data }: { data: any }) {
 
 function Metric({ title, value }: any) {
   return (
-    <div className="bg-zinc-100 p-4 rounded-lg">
+    <div className="bg-zinc-100 p-4 rounded-lg ">
       <p className="text-sm text-zinc-600">{title}</p>
       <p className="text-xl font-bold">{value}</p>
     </div>

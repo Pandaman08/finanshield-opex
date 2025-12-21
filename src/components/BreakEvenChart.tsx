@@ -130,13 +130,12 @@ export default function BreakEvenChart({ data }: { data: any }) {
 
   return (
     <div className="relative mt-8">
-      {/* Tooltip flotante */}
       {hover && (
         <div className="absolute top-4 left-4 z-10 bg-white shadow-lg rounded-lg p-4 text-sm w-64">
-          <h4 className="font-semibold mb-2">Análisis dinámico</h4>
-          <p>Unidades: <strong>{hover.units}</strong></p>
-          <p>Ingresos: <strong>{hover.revenue.toFixed(2)}</strong></p>
-          <p>Costos totales: <strong>{hover.cost.toFixed(2)}</strong></p>
+          <h4 className="font-semibold mb-2 text-black">Análisis dinámico</h4>
+          <p className="text-black">Unidades: <strong>{hover.units}</strong></p>
+          <p className="text-black">Ingresos: <strong>{hover.revenue.toFixed(2)}</strong></p>
+          <p className="text-black">Costos totales: <strong>{hover.cost.toFixed(2)}</strong></p>
           <p className={hover.profit >= 0 ? "text-green-600" : "text-red-600"}>
             Beneficio operativo: <strong>{hover.profit.toFixed(2)}</strong>
           </p>
@@ -145,8 +144,5 @@ export default function BreakEvenChart({ data }: { data: any }) {
 
       <Line data={chartData} options={options} />
     </div>
-  );
-
-
-  
+  );  
 }
